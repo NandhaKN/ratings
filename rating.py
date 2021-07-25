@@ -38,6 +38,8 @@ class Product(db.Model):
     def __repr__(self):
         return '<Products (%s, %s) >' % (self.rate, self.name)
 
+# class Mobile(db.Model):
+
 db.create_all()
 
 @application.route('/product', methods=['POST'])
