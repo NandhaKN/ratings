@@ -5,7 +5,6 @@ from flask_sqlalchemy import SQLAlchemy
 # from marshmallow import fields
 
 application = Flask(__name__)
-password = "Nan@1510"
 application.config['SQLALCHEMY_DATABASE_URI']=f'mysql+pymysql://root:nandha10@127.0.0.1:3306/rating'
 application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 application.secret_key = 'jose'
